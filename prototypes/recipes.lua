@@ -370,7 +370,7 @@ data:extend{
         {type = "fluid", name = "zinc-solution", amount = 20, ignored_by_stats = 20, ignored_by_productivity = 20},
         {type = "item", name = "stone", amount_min = 5, amount_max = 20, ignored_by_stats = 20, ignored_by_productivity = 20},
     },
-    allow_productivity = true,
+    allow_productivity = false,
     allow_quality = false,
     category = "chemistry",
     auto_recycle = true,
