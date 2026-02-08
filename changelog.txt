@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.0
+Date: 2026-02-08
+  I hope you're happy scooter:
+
+  Additions:
+    - Added the Macerator, a crusher-recycler hybrid that turns everything thrown into it into DUST.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.17
 Date: 2026-02-04
   noductivity:

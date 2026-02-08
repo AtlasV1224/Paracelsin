@@ -124,6 +124,16 @@ circuit_connector_definitions["mechanical-plant"] = circuit_connector_definition
     { variation = 17, main_offset = util.by_pixel(-43.75,  18.25), shadow_offset = util.by_pixel(-43.75,  18.25), show_shadow = true }, 
   }
 )
+circuit_connector_definitions["crusher"] = circuit_connector_definitions.create_vector
+(
+  universal_connector_template,
+  {
+    { variation = 18, main_offset = util.by_pixel( 14, 23), shadow_offset = util.by_pixel( 14, 28), show_shadow = true },
+    { variation = 16, main_offset = util.by_pixel(-36,  5), shadow_offset = util.by_pixel(-33,  7), show_shadow = false },
+    { variation = 18, main_offset = util.by_pixel( 14, 23), shadow_offset = util.by_pixel( 14, 28), show_shadow = true },
+    { variation = 16, main_offset = util.by_pixel(-36,  5), shadow_offset = util.by_pixel(-33,  7), show_shadow = false }
+  }
+)
 
 data:extend{
     {
@@ -133,6 +143,10 @@ data:extend{
   {
     type = "recipe-category",
     name = "mechanics",
+  },
+    {
+    type = "recipe-category",
+    name = "macerating",
   },
   {
     type = "item",
@@ -191,6 +205,26 @@ data:extend{
     weight = 50000,
     place_result = "burner-pumpjack"
 },
+  {
+    type = "item",
+    name = "macerator",
+    icons =
+    {
+      {
+        icon = "__space-age__/graphics/icons/crusher.png",
+        icon_size = 64,
+        tint = { r = 0.7, g = 0.87, b = 0.79, a = 1 }
+      },
+    },
+    subgroup = "smelting-machine",
+    order = "d-b",
+    inventory_move_sound = item_sounds.drill_inventory_move,
+    pick_sound = item_sounds.drill_inventory_pickup,
+    drop_sound = item_sounds.drill_inventory_move,
+    place_result = "macerator",
+    stack_size = 5,
+    weight = 50000
+  },
 {
     type = "recipe",
     name = "electrochemical-plant",
@@ -269,6 +303,19 @@ data:extend{
     category = "pressing",
     auto_recycle = true
 },
+  {
+    type = "recipe",
+    name = "macerator",
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "low-density-structure", amount = 20},
+      {type = "item", name = "galvanized-steel-plate", amount = 5},
+      {type = "item", name = "electric-coil", amount = 10}
+    },
+    energy_required = 20,
+    results = {{type="item", name="macerator", amount=1}}
+  },
     {
         name = "electrochemical-plant",
         type = "assembling-machine",
@@ -883,5 +930,81 @@ data:extend{
 
     circuit_connector = circuit_connector_definitions["pumpjack"],
     circuit_wire_max_distance = default_circuit_wire_max_distance
+  },
+  {
+    type = "furnace",
+    name = "macerator",
+    icons =
+    {
+      {
+        icon = "__space-age__/graphics/icons/crusher.png",
+        icon_size = 64,
+        tint = { r = 0.7, g = 0.87, b = 0.79, a = 1 }
+      },
+    },
+    flags = {"placeable-neutral", "placeable-player", "player-creation"},
+    minable = {mining_time = 0.2, result = "macerator"},
+    fast_replaceable_group = "crusher",
+    max_health = 500,
+    corpse = "crusher-remnants",
+    dying_explosion = "electric-furnace-explosion",
+    circuit_wire_max_distance = 9,
+    circuit_connector = circuit_connector_definitions["crusher"],
+    collision_box = {{-0.7, -1.2}, {0.7, 1.2}},
+    surface_conditions =
+    {
+      {
+        property = "gravity",
+        min = 1
+      }
+    },
+    selection_box = {{-1, -1.5}, {1, 1.5}},
+    damaged_trigger_effect = hit_effects.entity(),
+    module_slots = 0,
+    icon_draw_specification = {shift = {0, -0.45}},
+    allowed_effects = {},
+    crafting_categories = {"macerating"},
+    crafting_speed = 1,
+    source_inventory_size = 1,
+    result_inventory_size = 0,
+    energy_usage = "3MW",
+    heating_energy = "300kW",
+    energy_source =
+    {
+      type = "electric",
+      usage_priority = "secondary-input",
+      emissions_per_minute = { pollution = 20 }
+    },
+    open_sound = sounds.mech_small_open,
+    close_sound = sounds.mech_small_close,
+    working_sound =
+    {
+      sound =
+      {
+        filename = "__space-age__/sound/entity/crusher/crusher-loop.ogg",
+        volume = 0.8,
+        audible_distance_modifier = 0.6,
+      },
+      fade_in_ticks = 4,
+      fade_out_ticks = 20,
+      max_sounds_per_prototype = 3
+    },
+    graphics_set = require("__Paracelsin__/prototypes/macerator-pictures"),
+    water_reflection =
+    {
+      pictures =
+      {
+        filename = "__space-age__/graphics/entity/crusher/crusher-reflection.png",
+        priority = "extra-high",
+        width = 24,
+        height = 24,
+        shift = util.by_pixel(5, 40-32),
+        variation_count = 1,
+        scale = 5
+      },
+      rotate = false,
+      orientation_to_variation = false
+    }
+  },
   }
-  }
+  table.insert(data.raw["utility-constants"]["default"].factoriopedia_recycling_recipe_categories, "macerating")
