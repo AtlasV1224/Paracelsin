@@ -1,3 +1,5 @@
+[![foundrygg.com](https://img.shields.io/badge/foundrygg-4a1402?style=for-the-badge&logo=vercel&logoColor=white)](https://foundrygg.com)[![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/VuVhYUBbWE)
+
 Another frozen world on the horizon... Paracelsin is much colder than Aquilo, but unlike the world of ammonia this planet has a solid surface.
 Highly active cryovolcanically, the planet eerily resembles Vulcanus but instead of lava and sulfuric acid the planet is covered by ice and liquid nitrogen.
 
@@ -16,8 +18,6 @@ Many rewards will come from conquering the frozen wasteland of nitrogen and zinc
 Paracelsin is located farther than Aquilo in space. You can reach it from Fulgora or Aquilo, but beware of the large asteroids on the way. Make sure to bring something to keep you warm, as just like Aquilo, your machines won't work unless heated.
 
 ## Resources
-
-Paracelsin includes the following resources:
 - Sphalerite, compound of zinc, iron and sulfur
 - Tetrahedrite, compound of copper, zinc and sulfur
 - Vaterite, a mineral not unlike Calcite
@@ -89,6 +89,10 @@ This mod wouldn't be possible without the help of these amazing people!
 - **Creators**: Krastorio Team
 - **Source**: [Krastorio 2 Assets](https://mods.factorio.com/mod/Krastorio2Assets)
 - **License**: [GNU LGPLv3](https://opensource.org/license/lgpl-3.0)
+
+
+#### Paracelsin's icon texture
+- Talandar
 
 #### Various other help and inspiration
 - The mod-dev-help channel in general!

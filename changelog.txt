@@ -1,4 +1,54 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.1
+Date: 2026-02-18
+  Clean new look:
+
+  Changes:
+    - Updated planet icon! Thanks again Talandar!
+---------------------------------------------------------------------------------------------------
+Version: 1.7.0
+Date: 2026-02-08
+  I hope you're happy scooter:
+
+  Additions:
+    - Added the Macerator, a crusher-recycler hybrid that turns everything thrown into it into DUST.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.17
+Date: 2026-02-04
+  noductivity:
+
+  Fixes:
+    - Removed productivity from Zinc Purification as it had no effect.
+---------------------------------------------------------------------------------------------------
+Version: 1.6.16
+Date: 2026-01-13
+  stinky:
+
+  Changes:
+    - Sulfur now has a fuel emission multiplier cuz realism or smth
+    - Updated graphics mod requirements
+
+  Notes:
+    - Check out my new planet Muria!
+---------------------------------------------------------------------------------------------------
+Version: 1.6.15
+Date: 2026-01-08
+  Party's over:
+
+  Changes:
+    - Rebalanced the solar matrix and accumulator to be still slightly better than some other modded planets' fellow solar infrastructure but like. NOT THAT OP LIKE BEFORE TwT. Have fun rebuilding all your solar builds again <3
+
+  Notes:
+    - Happy new year btw!!
+---------------------------------------------------------------------------------------------------
+Version: 1.6.14
+Date: 2025-12-29
+  buffed buffet:
+
+  Changes:
+    - Buffed the nitric acid blue chips recipe again.
+    - Changed the base power values for the solar matrix and super accumulator to be more in line with other modded planets' upgraded solar panels and accumulators. Still useless on paracelsin.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.13
 Date: 2025-12-19
   canals!:

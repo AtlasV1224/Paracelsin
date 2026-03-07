@@ -95,11 +95,11 @@ data:extend{
     order = "f",
     icon = "__Paracelsin-Graphics__/graphics/icons/paracelsin-processing-units-from-nitric-acid.png",
     icon_size = 64,
-    energy_required = 6,
+    energy_required = 5,
     ingredients = {
         {type = "fluid", name = "nitric-acid",       amount = 5},
         {type = "item", name = "advanced-circuit", amount = 2},
-        {type = "item", name = "electronic-circuit", amount = 16},
+        {type = "item", name = "electronic-circuit", amount = 12},
         {type = "item", name = "zinc-solder", amount = 2},
     },
     results = {
@@ -370,7 +370,7 @@ data:extend{
         {type = "fluid", name = "zinc-solution", amount = 20, ignored_by_stats = 20, ignored_by_productivity = 20},
         {type = "item", name = "stone", amount_min = 5, amount_max = 20, ignored_by_stats = 20, ignored_by_productivity = 20},
     },
-    allow_productivity = true,
+    allow_productivity = false,
     allow_quality = false,
     category = "chemistry",
     auto_recycle = true,

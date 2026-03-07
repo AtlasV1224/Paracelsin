@@ -438,6 +438,35 @@ data:extend {
   },
   {
     type = "technology",
+    name = "macerating",
+    icon = "__Paracelsin-Graphics__/graphics/technology/macerating.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "macerator"
+      },
+    },
+    prerequisites = { "galvanized-steel" },
+    unit =
+    {
+      count = 1000,
+      ingredients =
+      {
+        { "automation-science-pack",               1 },
+        { "logistic-science-pack",                 1 },
+        { "chemical-science-pack",                 1 },
+        { "production-science-pack",                  1 },
+        { "utility-science-pack",                  1 },
+        { "space-science-pack",                    1 },
+        { "galvanization-science-pack", 1 }
+      },
+      time = 60
+    }
+  },
+  {
+    type = "technology",
     name = "axe-mining-speed",
     icons = util.technology_icon_constant_speed("__Paracelsin-Graphics__/graphics/technology/zinc-axe.png"),
     effects =

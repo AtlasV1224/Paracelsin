@@ -277,7 +277,7 @@ data:extend{{
     name = "paracelsin",
     icon = "__Paracelsin-Graphics__/graphics/icons/paracelsin.png",
     starmap_icon = "__Paracelsin-Graphics__/graphics/icons/starmap-planet-paracelsin.png",
-    starmap_icon_size = 512,
+    starmap_icon_size = 2048,
     gravity_pull = 10,
     distance = 42,
     orientation = 0.31,
