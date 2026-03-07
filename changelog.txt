@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.3
+Date: 2026-03-07
+  Im cryings:
+
+  Fixes:
+    - Reverted PR #10
+
+  Notes:
+    - For the love of Nauvis please test your PRs before sending them, I trust them to work if you spent the time to code them.
+---------------------------------------------------------------------------------------------------
 Version: 1.7.2
 Date: 2026-03-07
   Mergingful:

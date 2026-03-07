@@ -92,14 +92,13 @@ data.raw.item["accumulator-v2"].default_import_location = "paracelsin"
 data.raw.item["accumulator-v2"].weight = 100000
 
 local function add_player_crafting_categories(categories)
-  for _, entity in pairs(data.raw.character) do  -- iterate all characters
+    local entity = data.raw.character.character
     for _,category in pairs(categories) do
       table.insert(entity.crafting_categories, category)
-    end 
+    end
   end
-end
   
-  add_player_crafting_categories({"hand-crafting"})
+add_player_crafting_categories({"hand-crafting"})
 
 require "prototypes.items"
 require "prototypes.machines"
