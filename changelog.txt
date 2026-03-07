@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.2
+Date: 2026-03-07
+  Mergingful:
+
+  Fixes:
+    - Fixed typos in the locale (PR #9 by OhashiReon)
+    - Fixed compat problems with Multiple Characters (PR #10 by AtlasV1224)
+---------------------------------------------------------------------------------------------------
 Version: 1.7.1
 Date: 2026-02-18
   Clean new look:
